@@ -29,14 +29,19 @@ python tong_yi_qian_wen-sk2db.py
 python main.py
 ```
 # 使用方法
-右击小猫咪图片，说出需求，等待执行代码就好了🆗
+右击小猫咪图片，说出需求，等待执行代码就好了🆗  
+
 ![image](https://github.com/kkive/Free-Suger_Butler/assets/51246778/1878e0c6-6bef-40fe-8964-04978f236c0c)
 
 # 功能
 
 |项目名称|是否支持|指令|版本|
-| ----------- | ----------- |------------|---|
+| :----------- | :-:  |:------------|:---:|
 |操作微信指定对象发消息|✅|"打开微信给老婆发消息，问她吃了吗"|v1.0|
-
+|操作浏览器|❌|NULL|v1.1|
+|操作命令行执行命令|❌|NULL|v1.1|
+|英雄联盟匹配成功自动点击确认|❌|NULL|v1.1|
+目前只能想到这些功能，大家有什么想法，请在[issues](https://github.com/kkive/Free-Suger_Butler/issues)选择Labels选择'需求'提交
 # 代码目前只能实现基础功能，不是特别完善，希望大家多提一点意见，作者不会破防，代码之路任重道远加油💪
+# 目前作者还有工作，不是SOHO看到消息必回
 # 最新消息可能更新在[飞书知识库](https://yetnfbtnyy.feishu.cn/wiki/EWS9wJ3JViSfP7kZ31pcgSPJnCe?fromScene=spaceOverview)
