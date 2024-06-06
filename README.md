@@ -43,5 +43,5 @@ python main.py
 |英雄联盟匹配成功自动点击确认|❌|NULL|v1.1|
 目前只能想到这些功能，大家有什么想法，请在[issues](https://github.com/kkive/Free-Suger_Butler/issues)选择Labels选择'需求'提交
 # 代码目前只能实现基础功能，不是特别完善，希望大家多提一点意见，作者不会破防，代码之路任重道远加油💪
-# 目前作者还有工作，不是SOHO看到消息必回
+# 目前作者还有工作，所以不是SOHO，看到消息必回
 # 最新消息可能更新在[飞书知识库](https://yetnfbtnyy.feishu.cn/wiki/EWS9wJ3JViSfP7kZ31pcgSPJnCe?fromScene=spaceOverview)
