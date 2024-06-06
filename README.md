@@ -12,7 +12,7 @@ python -V
 ```python
 git clone https://github.com/kkive/Free-Suger_Butler.git
 cd Free-Suger_Butler
-pip install rerequirements.txt
+pip install -r rerequirements.txt
 ```
 ## 将通义千问的api key加入数据库
 ```python
@@ -23,9 +23,20 @@ cd debugging
 python tong_yi_qian_wen-sk2db.py
 ## 根据提示将apikey导入
 ```
-通义千问apikey申请入口：如何开通DashScope并创建API-KEY_模型服务灵积(DashScope)-阿里云帮助中心
-运行
+通义千问apikey申请入口：[如何开通DashScope并创建API-KEY_模型服务灵积(DashScope)-阿里云帮助中心](https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key?spm=a2c4g.11186623.0.0.6d1b46c1tmtvCW)。
+## 运行
 ```python
 python main.py
 ```
+# 使用方法
+右击小猫咪图片，说出需求，等待执行代码就好了🆗
+![image](https://github.com/kkive/Free-Suger_Butler/assets/51246778/1878e0c6-6bef-40fe-8964-04978f236c0c)
+
+# 功能
+
+|项目名称|是否支持|指令|版本|
+| ----------- | ----------- |------------|---|
+|操作微信指定对象发消息|✅|"打开微信给老婆发消息，问她吃了吗"|v1.0|
+
 # 代码目前只能实现基础功能，不是特别完善，希望大家多提一点意见，作者不会破防，代码之路任重道远加油💪
+# 最新消息可能更新在[飞书知识库](https://yetnfbtnyy.feishu.cn/wiki/EWS9wJ3JViSfP7kZ31pcgSPJnCe?fromScene=spaceOverview)
