@@ -28,3 +28,4 @@ python tong_yi_qian_wen-sk2db.py
 ```python
 python main.py
 ```
+# 代码目前只能实现基础功能，不是特别完善，希望大家多提一点意见，作者不会破防，代码之路任重道远加油💪
