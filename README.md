@@ -45,3 +45,6 @@ python main.py
 # 代码目前只能实现基础功能，不是特别完善，希望大家多提一点意见，作者不会破防，代码之路任重道远加油💪
 # 目前作者还有工作，所以不是SOHO，看到消息必回
 # 最新消息可能更新在[飞书知识库](https://yetnfbtnyy.feishu.cn/wiki/EWS9wJ3JViSfP7kZ31pcgSPJnCe?fromScene=spaceOverview)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=kkive/Free-Suger_Butler&type=Date)](https://star-history.com/#kkive/Free-Suger_Butler&Date)
