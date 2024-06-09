@@ -11,7 +11,7 @@ python -V
 ## 下载代码并进入文件夹
 ```python
 git clone https://github.com/kkive/Free-Suger_Butler.git
-cd Free-Suger_Butler
+cd Free-Suger_Butler/Free-Suger_Butler-main
 pip install -r rerequirements.txt
 ```
 ## 将通义千问的api key加入数据库
