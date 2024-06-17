@@ -47,9 +47,7 @@ python main.py
 |操作浏览器|❌|NULL|v1.1|
 |操作命令行执行命令|❌|NULL|v1.1|
 |英雄联盟匹配成功自动点击确认|✅|"英雄联盟帮我自动点击接受"|v1.1|
-## 目前鼠标移动使用了绝对移动，后期v1.2会变为相对移动
-### 英雄联盟点击接受，需要将英雄联盟界面移动到左上角，如图所示👇
-![image](https://github.com/kkive/Free-Suger_Butler/assets/51246778/c44c1290-bd02-4f10-add1-fa30bdf5188d)
+
 
 目前只能想到这些功能，大家有什么想法，请在[issues](https://github.com/kkive/Free-Suger_Butler/issues)选择Labels选择'需求'提交
 
