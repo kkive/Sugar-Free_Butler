@@ -1,4 +1,3 @@
-
 from paddleocr import PaddleOCR
 from PIL import ImageGrab
 import pygetwindow as gw
@@ -91,7 +90,15 @@ class OCR:
                     if matched_click_name in text:
                         send_coordinates = line[0]
                         x, y = send_coordinates[0]
-                        success_message = f"找到按钮：'{matched_click_name}'，坐标：({x}, {y})"
+                        
+                        # 调整坐标到桌面位置
+                        desktop_x = x + app_window.left
+                        desktop_y = y + app_window.top
+
+                        x = desktop_x
+                        y = desktop_y
+                        
+                        success_message = f"找到按钮：'{matched_click_name}'，桌面坐标：({desktop_x}, {desktop_y})"
                         print(success_message)
                         logging.info(success_message)
                         return x, y
