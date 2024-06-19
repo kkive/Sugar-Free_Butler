@@ -1,6 +1,7 @@
 # 无糖管家手册
 #  什么是 /Free-Suger_Butler（FSB管家）
-Free-Suger_Butler（以下简称FSB）是第一个基于llm和OCR技术完成的一款大模型一样，可以帮助用户完成各种复杂以及繁琐的任务
+Free-Suger_Butler（以下简称FSB）是第一个基于llm和OCR技术完成的一款大模型一样，可以帮助用户完成各种复杂以及繁琐的任务  
+完整[操作手册](https://yetnfbtnyy.feishu.cn/wiki/EWS9wJ3JViSfP7kZ31pcgSPJnCe)
 # 应用开荒
 ## Python版本>=3.9.19
   使用命令查看版本
