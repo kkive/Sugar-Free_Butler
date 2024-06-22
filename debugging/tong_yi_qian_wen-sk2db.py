@@ -68,7 +68,7 @@ def fetch_api_keys(db_path):
 
 # 主程序
 if __name__ == "__main__":
-    db_path = r'data\fsb_database.db'
+    db_path = r'data\sfb_database.db'
 
     # 提供选择菜单
     choice = input("选择要插入的数据类型 (1: tong_yi_qian_wenkey): ")
