@@ -48,12 +48,6 @@ python main.py
 |操作浏览器|❌|NULL|v1.1|
 |操作命令行执行命令|❌|NULL|v1.1|
 |英雄联盟匹配成功自动点击确认|✅|"英雄联盟帮我自动点击接受"|v1.1|
-
+|支持运行最近一次代码|✅|"运行最近的一次代码"|v1.2|
 
 目前只能想到这些功能，大家有什么想法，请在[issues](https://github.com/kkive/Free-Suger_Butler/issues)选择Labels选择'需求'提交
-
-# 代码目前只能实现基础功能，不是特别完善，希望大家多提一点意见，作者不会破防，代码之路任重道远加油💪
-# 目前作者还有工作，所以不是SOHO，看到消息必回
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=kkive/Free-Suger_Butler&type=Date)](https://star-history.com/#kkive/Free-Suger_Butler&Date)
