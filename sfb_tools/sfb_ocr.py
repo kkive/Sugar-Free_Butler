@@ -14,7 +14,7 @@ class OCR:
         log_directory = 'logs'
         os.makedirs(log_directory, exist_ok=True)
         logging.basicConfig(
-            filename=os.path.join(log_directory, 'fsb_logs.log'),
+            filename=os.path.join(log_directory, 'sfb_logs.log'),
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'
