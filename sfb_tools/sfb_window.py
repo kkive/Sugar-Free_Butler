@@ -8,6 +8,8 @@ import logging
 import os
 import threading
 from vosk import KaldiRecognizer, Model
+from fuzzywuzzy import fuzz  # 新增：引入fuzzywuzzy库
+from .sfb_find_the_location_of_the_python import CodeRunner
 
 class FSBWindow:
     def __init__(self, callback=None):
@@ -27,7 +29,7 @@ class FSBWindow:
         self.prev_y = 0
         self.recognizer = sr.Recognizer()
         self.lock = threading.Lock()
-
+        self.code_run_flag = False  # 新增：用于指示是否运行了代码
         self.setup_logging()
 
         windll.shcore.SetProcessDpiAwareness(1)
@@ -45,7 +47,7 @@ class FSBWindow:
         if not os.path.exists(log_directory):
             os.makedirs(log_directory)
         logging.basicConfig(
-            filename=os.path.join(log_directory, 'fsb_logs.log'),
+            filename=os.path.join(log_directory, 'sfb_logs.log'),
             level=logging.DEBUG,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'
@@ -70,7 +72,16 @@ class FSBWindow:
             result = json.loads(text)
             text = result["text"].replace(" ", "")
             logging.info(f"识别结果: {text}")
-            return text
+
+            # 新增：使用fuzzywuzzy库对比相似度
+            if (fuzz.partial_ratio(text, "运行最近的代码") > 50 or 
+                fuzz.partial_ratio(text, "运行上一次的代码") > 50):
+                code_runner = CodeRunner()
+                code_runner.run_script()
+                logging.info("运行代码脚本")
+                self.code_run_flag = True  # 设置标志
+            else:
+                return text
 
         except sr.WaitTimeoutError:
             logging.warning("在等待语音开始时超时")
@@ -130,7 +141,7 @@ class FSBWindow:
             if self.callback:
                 self.callback(result)
             time.sleep(3)
-        else:
+        elif self.code_run_flag == False:
             print('你好像还没说话！')
             logging.warning("未能识别任何结果")
         logging.debug("语音识别线程结束")

@@ -6,7 +6,7 @@ import logging
 import os
 
 class TongYiQianWen:
-    def __init__(self, db_path=r'data\fsb_database.db', system_message="You are a helpful assistant."):
+    def __init__(self, db_path=r'data\sfb_database.db', system_message="You are a helpful assistant."):
         self.setup_logging()
         self.db_path = db_path
         self.system_message = system_message
@@ -17,7 +17,7 @@ class TongYiQianWen:
         log_directory = 'logs'
         os.makedirs(log_directory, exist_ok=True)
         logging.basicConfig(
-            filename=os.path.join(log_directory, 'fsb_logs.log'),
+            filename=os.path.join(log_directory, 'sfb_logs.log'),
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'

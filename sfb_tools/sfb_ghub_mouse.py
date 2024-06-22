@@ -7,7 +7,7 @@ import time
 # 罗技函数：
 # ↓↓↓↓↓↓↓↓↓ 调用ghub键鼠驱动 ↓↓↓↓↓↓↓↓↓
 try:
-    gm = CDLL(r'fsb_tools\ghub_device.dll')  # ghubdlldir
+    gm = CDLL(r'sfb_tools\ghub_device.dll')  # ghubdlldir
     gmok = gm.device_open()
     system('cls') 
     if not gmok:

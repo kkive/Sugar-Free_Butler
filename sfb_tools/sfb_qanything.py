@@ -7,7 +7,7 @@ import os
 from .utils.AuthV3Util import addAuthParams
 
 class YoudaoQAnything:
-    def __init__(self, db_path=r'data\fsb_database.db'):
+    def __init__(self, db_path=r'data\sfb_database.db'):
         self.db_path = db_path
         self.APP_KEY, self.APP_SECRET, self.kbId = self.fetch_api_info()
 
@@ -17,7 +17,7 @@ class YoudaoQAnything:
         if not os.path.exists(log_directory):
             os.makedirs(log_directory)
         logging.basicConfig(
-            filename=os.path.join(log_directory, 'fsb_logs.log'),
+            filename=os.path.join(log_directory, 'sfb_logs.log'),
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'

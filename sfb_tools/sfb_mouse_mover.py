@@ -12,7 +12,7 @@ class MouseMover:
         
         # 优化日志记录配置
         logging.basicConfig(
-            handlers=[logging.FileHandler(os.path.join(log_directory, 'fsb_logs.log'), 'a')],
+            handlers=[logging.FileHandler(os.path.join(log_directory, 'sfb_logs.log'), 'a')],
             level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'

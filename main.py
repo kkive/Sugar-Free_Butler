@@ -1,13 +1,13 @@
 import threading
 import pyautogui
-from fsb_tools import fsb_window
-from fsb_tools import fsb_tong_yi_qian_wen_code
-from fsb_tools import fsb_qanything
-from fsb_tools import fsb_find_the_location_of_the_python
+from sfb_tools import sfb_window
+from sfb_tools import sfb_tong_yi_qian_wen_code
+from sfb_tools import sfb_qanything
+from sfb_tools import sfb_find_the_location_of_the_python
 
 # 初始化 qanything 和 tong_yi_qian_wen_code 对象
-qAnything = fsb_qanything.YoudaoQAnything()
-tong_yi_qian_wen = fsb_tong_yi_qian_wen_code.TongYiQianWen()
+qAnything = sfb_qanything.YoudaoQAnything()
+tong_yi_qian_wen = sfb_tong_yi_qian_wen_code.TongYiQianWen()
 
 def process_code(text):
 
@@ -41,11 +41,11 @@ def process_code(text):
     tong_yi_qian_wen.call_with_messages(user_message)
 
     # 运行代码
-    code_runner = fsb_find_the_location_of_the_python.CodeRunner()
+    code_runner = sfb_find_the_location_of_the_python.CodeRunner()
     code_runner.run_script()
 
 def speech_callback(text):
     threading.Thread(target=process_code, args=(text,)).start()
 
 if __name__ == "__main__":
-    window = fsb_window.FSBWindow(callback=speech_callback)
+    window = sfb_window.FSBWindow(callback=speech_callback)
