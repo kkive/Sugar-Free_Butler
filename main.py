@@ -35,7 +35,7 @@ def process_code(text):
         '-必须保证代码包含以下库的导入：',
         '（import time',
         'import pyautogui',
-        'from fsb_tools import fsb_mouse_mover, fsb_window, fsb_browser_opener, fsb_first_process, fsb_ocr, fsb_write_text）',
+        'from sfb_tools import sfb_mouse_mover, sfb_window, sfb_browser_opener, sfb_first_process, sfb_ocr, sfb_write_text）',
         '检查代码，有没有未导入的库，如果有，根据上面的提示导入'
     ])
     tong_yi_qian_wen.call_with_messages(user_message)
@@ -48,4 +48,4 @@ def speech_callback(text):
     threading.Thread(target=process_code, args=(text,)).start()
 
 if __name__ == "__main__":
-    window = sfb_window.FSBWindow(callback=speech_callback)
+    window = sfb_window.sfbWindow(callback=speech_callback)
